@@ -1,4 +1,5 @@
 import pygame
+import sys
 from copy import deepcopy
 from random import choice
 
@@ -258,7 +259,9 @@ while True:
     dx2, dy2, rot2, drop2 = 0, 0, False, False
 
     for event in pygame.event.get():
-        if event.type == pygame.QUIT: exit()
+        if event.type == pygame.QUIT:
+            pygame.quit() 
+            sys.exit()  
         
         if event.type == pygame.KEYDOWN:
             # P1 Controls (Mũi tên)
