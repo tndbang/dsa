@@ -198,7 +198,7 @@ class Player:
         for i in range(4):
             gx = self.x_offset + ghost[i].x * TILE
             gy = 80 + ghost[i].y * TILE
-            pygame.draw.rect(screen, (45, 45, 50), (gx, gy, TILE-1, TILE-1))
+            pygame.draw.rect(screen, (120, 120, 130), (gx, gy, TILE-1, TILE-1))
 
         # 2. Vẽ gạch đang điều khiển (Figure)
         for i in range(4):
